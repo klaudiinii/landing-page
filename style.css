@@ -5,6 +5,7 @@ body {
     margin: 0px;
     background-image: url(img/yoga.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     font-family: 'Source Sans Pro', sans-serif;
     overflow: hidden;
@@ -24,7 +25,7 @@ body {
 .main-nav a {
     margin: 15px 20px;
     padding: 15px 20px;
-    display: block;
+    display: flex;
     text-decoration: none;
     color: #fff;
     letter-spacing: .3em;
@@ -126,6 +127,7 @@ a.btn:hover {
     border-radius: 2px;
     text-align: center;
     padding: 30px;
+    position: relative;
 }
 
 .modal-content h2 {
@@ -144,11 +146,23 @@ input {
     letter-spacing: .1em;
 }
 
+input:focus { 
+    outline: none; 
+}
+
 a.btn-modal {
     padding: 15px 100px;
     position: relative;
     bottom: -35px;
     font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 /* Modal section (POP UP) STOP */
