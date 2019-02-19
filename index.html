@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mountain Landing Page</title>
-    <link rel="stylesheet" href="style.css">
 
     <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro" rel="stylesheet">
-</head>
+    <!-- Font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
 
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <section class="main-container">
+        
+      <!-- Header -->
 
-        <!-- Header -->
+      <header>
+        <div class="toggle">
+          <i class="fas fa-bars toggle-menu"></i>
+        </div>
+        <nav>
+          <ul class="main-nav">
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+            <li class="nav-item"><a href="#">OFFER</a></li>
+            <li>
+              <a href="#" class="logo"><img src="logo/logo.png"/></a>
+            </li>
+            <li class="nav-item"><a href="#">GALLERY</a></li>
+            <li class="nav-item"><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <header>
-            <nav>
-                <ul class="main-nav">
-                    <li class="nav-item"><a href="#">ABOUT</a></li>
-                    <li class="nav-item"><a href="#">OFFER</a></li>
-                    <li><a href="#" class="logo"><img src="logo/logo.png"></a></li>
-                    <li class="nav-item"><a href="#">GALLERY</a></li>
-                    <li class="nav-item"><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
+      <!-- Header STOP -->
 
-        <!-- Header STOP -->
+      <!-- Article -->
 
-        <!-- Article -->
+      <article class="article-content">
+        <h1 class="title">Mountain Kingdom</h1>
+        <a href="#" class="btn" id="btn-click">ENTER THE GATES</a>
+      </article>
 
-        <article class="article-content">
-            <h1 class="title">Mountain Kingdom</h1>
-            <a href="#" class="btn" id="btn-click">ENTER THE GATES</a>
-        </article>
+      <!-- Article STOP -->
 
-        <!-- Article STOP -->
+      <!-- Footer -->
 
-        <!-- Footer -->
+      <footer>
+        <ul class="main-footer">
+          <li class="footer-item">&copy; 2019 &ensp; MOUNTAIN KINGDOM</li>
+          <li class="footer-item">Cookies &ensp;| &ensp; Privacy</li>
+          <li class="footer-item">
+            Design by &ensp; <span class="lighter-text"> Wizard of Oz </span>
+          </li>
+        </ul>
+      </footer>
 
-        <footer>
-            <ul class="main-footer">
-                <li class="footer-item"> &copy; 2019 &ensp; MOUNTAIN KINGDOM </li>
-                <li class="footer-item"> Cookies &ensp;| &ensp; Privacy </li>
-                <li class="footer-item"> Design by &ensp; <span class="lighter-text"> Wizard of Oz </span></li>
-            </ul>
-        </footer>
-
-        <!-- Footer STOP -->
-
+      <!-- Footer STOP -->
     </section>
 
     <!-- Modal section (POP UP)-->
 
     <section class="modal-section">
-
-        <div class="bg-modal">
-            <div class="modal-content">
-                <div class="close">✕</div>
-                <h2>Are you a Mountain Knight?</h2>
-                <form action="">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Password">
-                    <a href="#" class="btn btn-modal">LOG IN</a>
-                </form>
-            </div>
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="close">✕</div>
+          <h2>Are you a Mountain Knight?</h2>
+          <form action="">
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Password" />
+            <a href="#" class="btn btn-modal">LOG IN</a>
+          </form>
         </div>
-
+      </div>
     </section>
 
     <!-- Modal section (POP UP) STOP-->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
