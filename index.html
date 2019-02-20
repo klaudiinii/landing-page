@@ -8,10 +8,14 @@
 
     <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro"
+      href="https://fonts.googleapis.com/css?family=Pacifico"
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
     <!-- Font awsome -->
     <link
       rel="stylesheet"
@@ -35,7 +39,7 @@
             <li class="nav-item"><a href="#">ABOUT</a></li>
             <li class="nav-item"><a href="#">OFFER</a></li>
             <li>
-              <a href="#" class="logo"><img src="logo/logo.png"/></a>
+              <a href="#" class="logo"><img src="logo/logo.png" alt="logo"/></a>
             </li>
             <li class="nav-item"><a href="#">GALLERY</a></li>
             <li class="nav-item"><a href="#">CONTACT</a></li>
@@ -45,19 +49,19 @@
 
       <!-- Header STOP -->
 
-      <!-- Article -->
+      <!-- Main header -->
 
-      <article class="article-content">
+      <header class="main-header">
         <h1 class="title">Mountain Kingdom</h1>
         <a href="#" class="btn" id="btn-click">ENTER THE GATES</a>
-      </article>
+      </header>
 
-      <!-- Article STOP -->
+      <!-- Main header STOP -->
 
       <!-- Footer -->
 
-      <footer>
-        <ul class="main-footer">
+      <footer class="main-footer">
+        <ul class="main-footer-container">
           <li class="footer-item">&copy; 2019 &ensp; MOUNTAIN KINGDOM</li>
           <li class="footer-item">Cookies &ensp;| &ensp; Privacy</li>
           <li class="footer-item">
@@ -76,14 +80,17 @@
         <div class="modal-content">
           <div class="close">✕</div>
           <h2>Are you a Mountain Knight?</h2>
-          <form action="">
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Password" />
-            <a href="#" class="btn btn-modal">LOG IN</a>
+          <form action="#" id="login-form">
+            <input type="email" placeholder="Email" id="email" />
+            <input type="password" placeholder="Password" id="password" />
+            <button class="btn btn-modal">LOG IN</button>
+            <div id="response"></div>
           </form>
         </div>
       </div>
     </section>
+
+    <!-- class="btn btn-modal" -->
 
     <!-- Modal section (POP UP) STOP-->
 

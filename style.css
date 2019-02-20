@@ -11,9 +11,13 @@ body {
   overflow: hidden;
 }
 
+.main-container {
+  height: 100vh;
+}
+
 /* General STOP */
 
-/* Header STOP */
+/* Header */
 
 .main-nav {
   display: flex;
@@ -38,13 +42,12 @@ body {
 
 /* Header STOP */
 
-/* Article */
+/* Main header */
 
-.article-content {
+.main-header {
   position: relative;
   justify-content: center;
   text-align: center;
-  height: 460px;
 }
 
 h1.title {
@@ -55,7 +58,7 @@ h1.title {
   margin-bottom: 46px;
 }
 
-a.btn {
+.btn {
   text-decoration: none;
   color: #fff;
   letter-spacing: 0.3em;
@@ -69,17 +72,25 @@ a.btn {
     #fda085 51%,
     #f6d365 100%
   );
+  border: none;
+  cursor: pointer;
 }
 
-a.btn:hover {
+.btn:hover {
   background-position: right center;
 }
 
-/* Article STOP */
+/* Main header STOP */
 
 /* Footer */
 
 .main-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.main-footer-container {
   display: flex;
   align-items: center;
   padding: 0px;
@@ -154,11 +165,11 @@ input:focus {
   outline: none;
 }
 
-a.btn-modal {
+.btn-modal {
   padding: 15px 100px;
-  position: relative;
-  bottom: -35px;
+  margin: 17px;
   font-weight: bold;
+  outline: none;
 }
 
 .close {
@@ -183,7 +194,6 @@ a.btn-modal {
 }
 
 @media (max-width: 768px) {
- 
   .toggle {
     display: block;
     cursor: pointer;
