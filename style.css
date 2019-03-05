@@ -88,7 +88,6 @@ h1.title {
   position: absolute;
   width: 100%;
   bottom: 0;
-  margin: 0;
 }
 
 .main-footer-container {
@@ -99,6 +98,7 @@ h1.title {
   background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0px;
   position: sticky;
+  bottom: 0;
 }
 
 .footer-item {
@@ -210,8 +210,6 @@ input:focus {
     display: flex;
     flex-direction: column;
   }
-
-
   .toggle-active {
     display: flex;
     flex-direction: column;
