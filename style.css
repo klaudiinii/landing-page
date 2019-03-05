@@ -194,6 +194,7 @@ input:focus {
 }
 
 @media (max-width: 768px) {
+
   .toggle {
     display: block;
     cursor: pointer;
@@ -210,9 +211,28 @@ input:focus {
     display: flex;
     flex-direction: column;
   }
+
   .toggle-active {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(
+    to bottom,
+    #f6d365 0%,
+    #fda085 100%
+  );
+    z-index: 2;
+    height: 100vh;
+  }
+  .toggle {
+  background-color: #f6d365;
+  }
+
+  .main-footer {
+    display: none;
   }
 }
 
