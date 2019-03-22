@@ -4,21 +4,18 @@ document.getElementById("btn-click").addEventListener("click", () => {
   document.querySelector(".modal-section").style.display = "block";
 });
 
+
 document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".modal-section").style.display = "none";
 });
 
-// Show and hide popup STOP
 
 // Activate toggle menu
 
-$(document).ready(function() {
-  $(".toggle-menu").click(function() {
-    $(".main-nav").toggleClass("toggle-active");
-  });
-});
+document.querySelector(".toggle-menu").addEventListener("click", () => {
+  document.querySelector(".main-nav").classList.toggle("toggle-active")
+})
 
-// Activate toggle menu STOP
 
 // Check form
 
@@ -44,4 +41,4 @@ document.getElementById("login-form").addEventListener("submit", e => {
     });
 });
 
-// Check form STOP
+
